@@ -1,6 +1,6 @@
  #include <stdio.h>
  /**
- * main - Entry point
+ * main - A program that prints with the puts function
  *
  * Return: Always 0 (Success)
  */
