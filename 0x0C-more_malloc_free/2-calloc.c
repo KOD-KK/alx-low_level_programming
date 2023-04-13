@@ -8,7 +8,7 @@
  *
  * Return: pointer to the memory area s
  */
-		
+
 char *_memset(char *s, char b, unsigned int n)
 {
 unsigned int i;
@@ -25,7 +25,7 @@ return (s);
  *
  * Return: pointer to allocated memory
  */
-		
+
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 char *ptr;
