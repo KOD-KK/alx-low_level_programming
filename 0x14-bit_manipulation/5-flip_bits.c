@@ -1,0 +1,25 @@
+#include "main.h"
+
+/**
+ * flip_bits - returns the number of bits to change
+ * @n: first number
+ * @m: second number
+ *
+ * Return: number of bits to change
+ */
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
+{
+	int j;
+	int counter = 0;
+	unsigned long int num;
+	unsigned long int new = n ^ m;
+
+	for (j = 63; j >= 0; j--)
+	{
+	num = new >> i;
+		if (num & 1)
+			counter++;
+	}
+
+	return (counter);
+}
