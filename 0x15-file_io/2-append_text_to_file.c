@@ -8,10 +8,9 @@
  * Return: If the function fails or filename is NULL - -1.
  *         Otherwise - 1.
  */
-
 int append_text_to_file(const char *filename, char *text_content)
 {
-int n, z, len = 0;
+int o, w, len = 0;
 if (filename == NULL)
 return (-1);
 if (text_content != NULL)
@@ -19,10 +18,10 @@ if (text_content != NULL)
 for (len = 0; text_content[len];)
 len++;
 }
-n = open(filename, O_WRONLY | O_APPEND);
-z = write(n, text_content, len);
-if (n == -1 || w == -1)
+o = open(filename, O_WRONLY | O_APPEND);
+w = write(o, text_content, len);
+if (o == -1 || w == -1)
 return (-1);
-close(n);
+close(o);
 return (1);
 }
